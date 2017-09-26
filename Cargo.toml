@@ -8,6 +8,8 @@ description = "Rust wrapper around BCrypt implementation in C, fully compatible 
 keywords = ["bcrypt", "cryptography", "hash"]
 categories = ["cryptography"]
 license = "MIT"
+repository = "https://github.com/ari7/bcrypt-bsd"
+homepage = "https://github.com/ari7/bcrypt-bsd"
 
 [build-dependencies]
 gcc = "0.3.54"
