@@ -1,11 +1,11 @@
-//! Rust wrapper around the BCrypt hashing algorithm implementation [written in C
-//! by Solar Designer][src].
+//! Rust wrapper around the BCrypt hashing algorithm implementation [written in C][src].
 //!
-//! The C code is embedded into this crate and compiled using build script.
+//! The C implementation is embedded into this crate and compiled using build script.
+//! It is fully compatible with OpenBSD bcrypt,
 //!
 //! # Example
 //!
-//! ```
+//! ```ignore
 //! use bcrypt_bsd::{gen_salt, hash};
 //! 
 //! let salt = gen_salt(12).unwrap();

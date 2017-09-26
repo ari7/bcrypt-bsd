@@ -4,7 +4,7 @@ build = "src/build.rs"
 name = "bcrypt-bsd"
 version = "0.1.1"
 
-description = "Rust wrapper around BCrypt implementation in C"
+description = "Rust wrapper around BCrypt implementation in C, fully compatible with OpenBSD bcrypt"
 keywords = ["bcrypt", "cryptography", "hash"]
 categories = ["cryptography"]
 license = "MIT"

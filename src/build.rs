@@ -3,10 +3,14 @@
 extern crate gcc;
 
 fn main() {
+    let names: Vec<String> = vec![
+        "crypt_blowfish.c",
+        "crypt_gensalt.c",
+        "wrapper.c",
+        "rust-interface.c"
+    ].into_iter().map(|n| "src/c/".to_owned() + n).collect();
+
     gcc::Build::new()
-        .files(&["c/crypt_blowfish.c",
-                 "c/crypt_gensalt.c",
-                 "c/wrapper.c",
-                 "c/rust-interface.c"])
+        .files(names)
         .compile("bcrypt-bsd");
 }
