@@ -3,6 +3,17 @@
 //!
 //! The C code is embedded into this crate and compiled using build script.
 //!
+//! # Example
+//!
+//! ```
+//! use bcrypt_bsd::{gen_salt, hash};
+//! 
+//! let salt = gen_salt(12).unwrap();
+//! let bcrypt_hash = hash("Password", salt).unwrap();
+//! println!("hash: {}", bcrypt_hash);
+//! 
+//! ```
+//!
 //! [src]: http://www.openwall.com/crypt/
 //!
 
