@@ -1,5 +1,5 @@
-//! Wrapper around the BCrypt hashing algorithm implementation [written in C
-//! by Solar Designer][src] making it available as a Rust crate.
+//! Rust wrapper around the BCrypt hashing algorithm implementation [written in C
+//! by Solar Designer][src].
 //!
 //! The C code is embedded into this crate and compiled using build script.
 //!
