@@ -1,7 +1,6 @@
 //! Rust wrapper around the BCrypt hashing algorithm implementation [written in C][src].
 //!
 //! The C implementation is embedded into this crate and compiled using build script.
-//! It is fully compatible with OpenBSD bcrypt,
 //!
 //! # Example
 //!
