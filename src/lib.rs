@@ -5,12 +5,14 @@
 //!
 //! # Example
 //!
-//! ```ignore
-//! use bcrypt_bsd::{gen_salt, hash};
+//! ```
+//! use bcrypt_bsd::{gen_salt, hash, to_str};
 //! 
 //! let salt = gen_salt(12).unwrap();
-//! let bcrypt_hash = hash("Password", salt).unwrap();
-//! println!("hash: {}", bcrypt_hash);
+//! let bcrypt_hash = hash("Password", &salt).unwrap();
+//! 
+//! println!("bcrypt salt: {}", to_str(&salt).unwrap());
+//! println!("bcrypt hash: {}", to_str(&bcrypt_hash).unwrap());
 //! 
 //! ```
 //!

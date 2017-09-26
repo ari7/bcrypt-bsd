@@ -2,7 +2,7 @@
 authors = ["ari7 <ari7even@gmail.com>"]
 build = "src/build.rs"
 name = "bcrypt-bsd"
-version = "0.1.1"
+version = "0.1.2"
 
 description = "Rust wrapper around BCrypt implementation in C, fully compatible with OpenBSD bcrypt"
 keywords = ["bcrypt", "cryptography", "hash"]
