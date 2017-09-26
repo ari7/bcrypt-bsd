@@ -12,7 +12,7 @@
  *     
  */
 
-int gen_salt(unsigned char cost, const char *random16, char *result) {
+int c_gen_salt(unsigned char cost, const char *random16, char *result) {
 #ifdef DEBAG
     printf("[C] random16: [");
 
@@ -43,7 +43,7 @@ int gen_salt(unsigned char cost, const char *random16, char *result) {
     }
 }
 
-int hash(const char *key, const char *salt, char *result) {
+int c_hash(const char *key, const char *salt, char *result) {
     const char *outcome = crypt_rn(key, salt, result, 61);
     if (!outcome) {
         return errno;
